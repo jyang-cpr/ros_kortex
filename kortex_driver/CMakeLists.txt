@@ -94,7 +94,7 @@ if(USE_CONAN)
                     BASIC_SETUP CMAKE_TARGETS
                     NO_OUTPUT_DIRS
                     SETTINGS kortex_api_cpp:arch=armv7 kortex_api_cpp:compiler=gcc kortex_api_cpp:compiler.version=7 kortex_api_cpp:compiler.libcxx=libstdc++11
-                    OPTIONS kortex_api_cpp:target=jetson)
+                    ENV TARGET=jetson)
   endif()
 endif()
 
